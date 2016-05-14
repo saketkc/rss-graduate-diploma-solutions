@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Royal Statistical Society Graduate Diploma Solutions</title><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions//feeds/rss-diploma-module1.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/rss-graduate-diploma-solutions/</id><updated>2016-04-21T00:00:00-07:00</updated><entry><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html" rel="alternate"></link><published>2016-04-21T00:00:00-07:00</published><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2016-04-21:rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem 1&lt;/h1&gt;
+&lt;h2&gt;Problem (i)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+F(x) &amp;amp;= P(X \leq x\\
+&amp;amp;= \sum_{A} P(X \leq x, A)\\
+&amp;amp;= P(X \leq x, A) + P(X \leq x, A^c)\\
+&amp;amp;= P(X \leq x|A)P(A) + P(X \leq x|A^c)P(A^c)\\
+&amp;amp;= F_1(x)\theta + F_2(x)(1-\theta)
+ \end{align*}&lt;/div&gt;
+&lt;p&gt;To deduce the next equation, we simply
+differentiate the above:&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align*}
+\frac{d}{dx} F(x) &amp;amp;= \frac{d}{dx} F_1(x)\theta+F_2(x)(1-\theta)\\
+f(x) &amp;amp;= f_1(x)\theta+f_2(x)(1-\theta)\\
+\int x f(x)dx &amp;amp;= \int x\theta f_1(x)dx + \int x(1-\theta)f_2(x)dx\\
+E[X] &amp;amp;= \theta \mu_1 + (1-\theta)\mu_2
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem (ii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+W_i &amp;amp;\sim \mathcal{N}(4.5,0.25)\\
+S_6=\sum_{i=1}^6 W_I &amp;amp;\sim \mathcal{N}(27,1.5)\\
+P(S_6\leq 25) &amp;amp;= P(\frac{S_6-27}{\sqrt{1.5}} \leq -\frac{2}{\sqrt{1.5}})\\
+&amp;amp;= P(Z \leq -1.63)\\
+&amp;amp;=0.056
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem (iii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+EW &amp;amp;= P(S_6 \leq 25)E[S_7] + P[S_6 \geq 25]E[S_6]\\
+&amp;amp;= 0.056*31.5+(1-0.056)*27\\
+&amp;amp;= 27.322
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem (iv)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+P(S_6 \leq 25) &amp;amp;= 0.01\\
+P(Z \leq -\frac{2}{\sigma}) &amp;amp;= 0.01
+\implies -\frac{2}{\sigma}&amp;amp;= -2.33\\
+&amp;amp;= 1.165
+\end{align*}&lt;/div&gt;
+&lt;h1&gt;Problem 2&lt;/h1&gt;
+&lt;h2&gt;Problem (i)&lt;/h2&gt;
+&lt;p&gt;Median = &lt;span class="math"&gt;\(\int_{-\infty}^m = \frac{1}{2}\)&lt;/span&gt;
+Thus,
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align*}
+\int_{-\infty}^m xf(x) dx &amp;amp;= \frac{1}{2}\\
+\int_{-p}^{\infty}
+ x f(-x) = \frac{1}{2}\\
+&amp;amp;= \int_p^{\infty} xf(x)\\
+&amp;amp;=  \int_{-p}^{\infty} xf(-x)dx\\
+\implies p &amp;amp;=0
+\end{align*}&lt;/div&gt;
+&lt;p&gt;Thus median &lt;span class="math"&gt;\(m=0\)&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Problem (ii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+EX &amp;amp;= \int_{-\infty}^{\infty}xf(x)dx \\
+&amp;amp;= \int_{\infty}^{-\infty}-xf(-x)d(-x) \ x \longrightarrow -x\\
+&amp;amp;= -\int_{-\infty}^{\infty}xf(-x)dx\\
+&amp;amp;= -\int_{-\infty}^{\infty}xf(x)dx \text{ since } f(x)=f(-x) \\
+\implies E[X] &amp;amp;=0
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem (iii)&lt;/h2&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(Y=X^2\)&lt;/span&gt;&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align*}
+E[XY] &amp;amp;= E[X^3]\\
+&amp;amp;= \int_{-\infty}^\infty x^3f(x)dx\\
+&amp;amp;=0
+\end{align*}&lt;/div&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(Cov(X&amp;lt;y)=E[XY]-E[X]E[Y] = 0\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(X,Y\)&lt;/span&gt; are uncorrelated&lt;/p&gt;
+&lt;h2&gt;Problem (iv)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+g(y) &amp;amp;= f_X(\sqrt{y}) \frac{dx}{dy}\\
+&amp;amp;= \frac{1}{2\sqrt{y}}f_X(\sqrt{y})\\
+\text{Note the typo in the original question where $\frac{1}{2}$ is issing}
+\end{align*}&lt;/div&gt;
+&lt;h1&gt;Problem 3&lt;/h1&gt;
+&lt;h2&gt;Problem 3.(i)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+f(x,y) &amp;amp;= \frac{1}{x}e^{-x} \\
+f(x) &amp;amp;= \int_0^{x} f(x,y)dy\\
+&amp;amp;= e^{-x}\\
+f_{Y|X}(x)&amp;amp;=\frac{f(X=x,Y)}{f(X)}\\
+&amp;amp;= \frac{1}{x}
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 3.(ii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+E[X^mY^n] &amp;amp;= \int_{y}^ix^my^n\frac{1}{x}e^{-x} dxdyi\\
+&amp;amp;= \int_0^\infty x^{m-1e^{-xdx} \int_0^x y^mdy}\\
+&amp;amp;= \int_0^\infty x^{m-1+n+1}e^{-x}\frac{1}{n}\\
+&amp;amp;= \frac{(m+n)!}{n+1}
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 3.(iii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+E[X]&amp;amp;=1\\
+E[X^2] &amp;amp;= 2\\
+Var(X) &amp;amp;= 1\\
+E[Y]&amp;amp;= 1/2\\
+E[Y^2] &amp;amp;= 2/3\\
+Var(Y) &amp;amp;= 5/12
+\end{align*}&lt;/div&gt;
+&lt;h1&gt;Problem 4&lt;/h1&gt;
+&lt;h2&gt;Problem 4.(i)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{tabular}{|c|c|c|}
+X1/X2 &amp;amp; 0 &amp;amp; 1\\
+0 &amp;amp;01.  &amp;amp;0.1\\
+1 &amp;amp; 0.3 &amp;amp;0.5
+\end{tabular}&lt;/div&gt;
+&lt;h2&gt;Problem 4.(ii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+S_Y &amp;amp;= \{0, 1, 2, 3\}\\
+\end{align*}&lt;/div&gt;
+&lt;p&gt;
+Idea: Start of with a random row and column in the table,
+Then keep sampling until there are 10 samples(Ignoring anything that is not in &lt;span class="math"&gt;\(S_Y\)&lt;/span&gt;)&lt;/p&gt;
+&lt;h2&gt;Problem 4.(iii)&lt;/h2&gt;
+&lt;p&gt;This is straightforward based on theses caseSs&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align*}i
+Y&amp;amp;=0 \implies X_1=0,X_2=0\\
+Y&amp;amp;=1 \implies X_1=0,X_2=1\\
+Y&amp;amp;=2 \implies X_1=1, X_2=0\\
+Y&amp;amp;=3 \implies X_1=1,X_2=1
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 4b&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h1&gt;Problem 5&lt;/h1&gt;
+&lt;h2&gt;Problem 5.(i)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+cor(X_1,X_2) &amp;amp;= \frac{Cov(X_1,X_2)}{\sigma_1\sigma_2}\\
+&amp;amp;= \frac{2}{4}\\
+&amp;amp;= 1/2
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 5.(ii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+E[Y] &amp;amp;= -1+1 =0\\
+Var(Y) &amp;amp;= Var(X_1) + Var(X_2) + 2Cov(X_1,X_2)\\
+&amp;amp;= 21
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 5.(ii)&lt;/h2&gt;
+&lt;p&gt;Since &lt;span class="math"&gt;\(Y_1.Y_2\)&lt;/span&gt; are both normal, independnce requires just the covariance being zero.&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align*}
+Cov(Y_1,Y_2) &amp;amp;=0\\
+&amp;amp;= KVar(X_1)+ (k+1)Cov(X_1,X_2) + Var(X_2)\\
+&amp;amp;= 3k+18\\
+\implies k &amp;amp;=-6
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 5.(b)&lt;/h2&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(E[\mathbf{Y}]=\mathbf{0}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(V=&lt;div class="math"&gt;\begin{pmatrix}
+1/3 &amp;amp; 2/9 &amp;amp; 1/9 &amp;amp; 0 &amp;amp; \dots &amp;amp; 0\\
+2/9 &amp;amp; 2/9 &amp;amp; 1/9 &amp;amp; 0 &amp;amp; \dots &amp;amp; 0\\
+1/9 &amp;amp; 1/9 &amp;amp; 1/9 &amp;amp; 0 &amp;amp; \dots &amp;amp; 0\\
+0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 1/3 &amp;amp; 2/9 &amp;amp; 1/9\\
+\end{pmatrix}&lt;/div&gt;\)&lt;/span&gt; 
+Essentiall th 3 rows block shifts every 4th row.&lt;/p&gt;
+&lt;p&gt;Joint distribution of &lt;span class="math"&gt;\(Y_1,Y_2,\dots, Y_{n-2}\)&lt;/span&gt; follows a MVN with mean 0 and variance as the above matrix&lt;/p&gt;
+&lt;h1&gt;Problem 6&lt;/h1&gt;
+&lt;div class="math"&gt;\begin{align*}
+M_X(t) &amp;amp;= E[e^{tX}]\\
+&amp;amp;= \int_0^\infty \frac{e^{tx} \theta^\alpha x^{\alpha-1} e^{-\theta x}}{\Gamma(\alpha)}dx\\
+&amp;amp;= \int_0^\infty \frac{(\theta-t)^\alpha}{(\theta-t)^\alpha} \frac{ \theta^\alpha x^{\alpha-1} e^{t-\theta x}}{\Gamma(\alpha)}\\
+&amp;amp;= \frac{\theta^\alpha}{(t-\theta)^\alpha}\\
+EX &amp;amp;= M_X'(0)\\
+&amp;amp;= \alpha\theta^\alpha(\theta-t)^{-\alpha-1}\\
+&amp;amp;= \alpha/\theta\\
+EX^2 &amp;amp;= M_X''(0)\\
+&amp;amp;= \alpha(\alpha-1)/\theta^2\\
+Var(X) = \alpha/\theta^2-\alpha(\alpha-1)/\theta^2\\
+&amp;amp;= \alpha/\theta^2
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 6.(ii)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+M_X(t) &amp;amp;= \frac{\theta}{\theta-t}
+Z &amp;amp;= \sum_iX_i\\
+M_Z(t) &amp;amp;= \prod M_{X_i}(t)\\
+&amp;amp;= (\frac{\theta}{\theta-t})^n\\
+&amp;amp;\sim \Gamma(\theta,n)
+\end{align*}&lt;/div&gt;
+&lt;h2&gt;Problem 6.(iii)&lt;/h2&gt;
+&lt;p&gt;Central Limit Theorem: &lt;/p&gt;
+&lt;p&gt;If &lt;span class="math"&gt;\(X_i\)&lt;/span&gt; represent random variables whose mgf exits in a neighborhood of 0
+and has finite first and second momements, then &lt;span class="math"&gt;\(\frac{\bar{X_n}-\mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0,1)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(\Gamma(n,\theta) \sim \mathcal{N}(n\sqrt{n}/\theta,n^2/\theta^2 )\)&lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Problem 7&lt;/h1&gt;
+&lt;div class="math"&gt;\begin{align*}
+P[X_2=1] &amp;amp;= \sum_{_{x_1}} P(X_2=1|X_=x_1)P(X_1=x__1)\\
+&amp;amp;= \frac{m}{n}*\frac{m-1}{n-1} + \frac{n-m}{n}\frac{m}{n-1}\\
+&amp;amp;= \frac{m}{n}\\
+P[X_3=1] &amp;amp;= \sum_{_{x_1,x_2}} P(X-_2=1X_2=x_2,X_1=x_1)\\
+\dots
+\end{align*}&lt;/div&gt;
+&lt;h1&gt;Problem 8&lt;/h1&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary></entry></feed>
