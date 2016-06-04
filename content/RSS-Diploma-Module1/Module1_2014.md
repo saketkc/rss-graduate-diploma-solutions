@@ -136,11 +136,13 @@ Var(Y) &= 5/12
 
 ## Problem 4.(i)
 
+$$
 \begin{tabular}{|c|c|c|}
 X1/X2 & 0 & 1\\
-0 &01.  &0.1\\
-1 & 0.3 &0.5
+0 & 0.1 & 0.1\\
+1 & 0.3 & 0.5
 \end{tabular}
+$$
 
 
 ## Problem 4.(ii)
@@ -244,15 +246,66 @@ $\Gamma(n,\theta) \sim \mathcal{N}(n\sqrt{n}/\theta,n^2/\theta^2 )$
 
 # Problem 7
 
+## Problem 7(a)
 \begin{align*}
+P[X_1=1] &= \frac{m}{n} \\
 P[X_2=1] &= \sum_{_{x_1}} P(X_2=1|X_=x_1)P(X_1=x__1)\\
 &= \frac{m}{n}*\frac{m-1}{n-1} + \frac{n-m}{n}\frac{m}{n-1}\\
 &= \frac{m}{n}\\
-P[X_3=1] &= \sum_{_{x_1,x_2}} P(X-_2=1X_2=x_2,X_1=x_1)\\
-\dots
+P[X_3=1] &= \sum_{{x_1,x_2}} P(X_3=1,X_2=x_2,X_1=x_1)\\
+&= \sum_{x_1x_2} P(X_3=1|X_1=x_1,X_2=x_2)P(X_1=x_1,X_2=x_2)\\
+&= \frac{m}{n} \frac{m-1}{n-1} \frac{m-2}{n-2}\\
+&+ \frac{m}{n} \frac{n-m}{n-1} \frac{m-1}{n-2}\\
+&+ \frac{n-m}{n} \frac{m}{n-1} \frac{m-1}{n-2}\\
+&+ \frac{n-m}{n} \frac{n-m-1}{n-1} \frac{m}{n-2}\\
+&= \frac{m}{n}\\
+P[X_1=1,X_2=1] &= \frac{m(m-1)}{n(n-1)}
+\end{align*}
+
+\begin{align*}
+E[X_iX_j] &= P(X_i=1,X_j=1)\\
+&= \frac{m(m-1)}{n(n-1)} \\
+Cov[X_i, X_j] &= E[X_i X_j]-E[X_i]E[X_j]\\
+&= \frac{m(m-1)}{n(n-1)} - (\frac{m}{n})^2\\
+&= \frac{m(m-n)}{n(n-1)}
+\end{align*}
+
+## Problem 7(b)
+
+\begin{align*}
+S &= \sum_{i=1}^n I_i\\
+Var(S) &= \sum_{i=1}^k Var(I_i) + 2\sum_{i<j} Cov(I_i,I_j)
+&= k \times (\frac{m}{n}-(\frac{m}{n})^2) + k(k-1) \frac{m(m-n)}{n(n-1)}\\
+&= \frac{km}{n} (1-\frac{m}{n} + (k-1))\frac{m-n}{n(n-1)})\\
+&= k\frac{m}{n}(1-\frac{m}{n})\frac{n-k}{n-1}
 \end{align*}
 
 
 
-
 # Problem 8
+
+## Problem 8(a,b)
+\begin{align*}
+R &= \sqrt{X^2+Y^2}\\
+Q &= tan^{-1} (\frac{Y}{X})\\
+\begin{vmatrix}
+\frac{\partial X}{\partial R} & \frac{\partial X}{\[\partial Q}\\
+\frac{\partial Y}{\partial R} & \frac{\partial Y}{\[\partial Q}\\
+\end{vmatrix} &= R
+P(R,Q) &= RP(X(R), Y(Q))\\
+&= \frac{R}{2\pi \sigma^2} exp^{-\frac{R^2}{2\sigma^2}}\\
+&= \frac{R}{\sigma^2}exp^{-\frac{R^2}{2\sigma^2}} \times \frac{1}{2\pi}\\
+&= P(R)P(Q)\\
+P(R) &=  \frac{R}{\sigma^2}exp^{-\frac{R^2}{2\sigma^2}}\\
+\end{align*}
+
+## Problem 8(c)
+
+\begin{align*}
+P(R < k\sigma ) &= 0.5\\
+\int_0^{k\sigma} \frac{$R}{\sigma^2} exp^{-\frac{R^2}{2\sigma^2}}dR  &= 0.5
+exp^{-\frac{k^2}{2}}&=0.5\\
+k^2 &= 2\ln(2)
+\end{align*}
+
+
