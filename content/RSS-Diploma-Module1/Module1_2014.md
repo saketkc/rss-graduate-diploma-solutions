@@ -136,13 +136,11 @@ Var(Y) &= 5/12
 
 ## Problem 4.(i)
 
-$$
-\begin{tabular}{|c|c|c|}
-X1/X2 & 0 & 1\\
-0 & 0.1 & 0.1\\
-1 & 0.3 & 0.5
-\end{tabular}
-$$
+\begin{array}{|c|c|c|}
+X1/X2 & 0 & 1\\\hline
+0 & 0.1 & 0.1\\\hline
+1 & 0.3 & 0.5\\\hline
+\end{array}
 
 
 ## Problem 4.(ii)
@@ -156,7 +154,7 @@ Then keep sampling until there are 10 samples(Ignoring anything that is not in $
 
 This is straightforward based on theses caseSs
 
-\begin{align*}i
+\begin{align*}
 Y&=0 \implies X_1=0,X_2=0\\
 Y&=1 \implies X_1=0,X_2=1\\
 Y&=2 \implies X_1=1, X_2=0\\
@@ -249,11 +247,11 @@ $\Gamma(n,\theta) \sim \mathcal{N}(n\sqrt{n}/\theta,n^2/\theta^2 )$
 ## Problem 7(a)
 \begin{align*}
 P[X_1=1] &= \frac{m}{n} \\
-P[X_2=1] &= \sum_{_{x_1}} P(X_2=1|X_=x_1)P(X_1=x__1)\\
+P[X_2=1] &= \sum_{{x_1}} P(X_2=1|X_=x_1)P(X_1=x_1)\\
 &= \frac{m}{n}*\frac{m-1}{n-1} + \frac{n-m}{n}\frac{m}{n-1}\\
 &= \frac{m}{n}\\
 P[X_3=1] &= \sum_{{x_1,x_2}} P(X_3=1,X_2=x_2,X_1=x_1)\\
-&= \sum_{x_1x_2} P(X_3=1|X_1=x_1,X_2=x_2)P(X_1=x_1,X_2=x_2)\\
+&= \sum_{x_1,x_2} P(X_3=1|X_1=x_1,X_2=x_2)P(X_1=x_1,X_2=x_2)\\
 &= \frac{m}{n} \frac{m-1}{n-1} \frac{m-2}{n-2}\\
 &+ \frac{m}{n} \frac{n-m}{n-1} \frac{m-1}{n-2}\\
 &+ \frac{n-m}{n} \frac{m}{n-1} \frac{m-1}{n-2}\\
@@ -261,6 +259,7 @@ P[X_3=1] &= \sum_{{x_1,x_2}} P(X_3=1,X_2=x_2,X_1=x_1)\\
 &= \frac{m}{n}\\
 P[X_1=1,X_2=1] &= \frac{m(m-1)}{n(n-1)}
 \end{align*}
+
 
 \begin{align*}
 E[X_iX_j] &= P(X_i=1,X_j=1)\\
@@ -274,10 +273,10 @@ Cov[X_i, X_j] &= E[X_i X_j]-E[X_i]E[X_j]\\
 
 \begin{align*}
 S &= \sum_{i=1}^n I_i\\
-Var(S) &= \sum_{i=1}^k Var(I_i) + 2\sum_{i<j} Cov(I_i,I_j)
+Var(S) &= \sum_{i=1}^k Var(I_i) + 2\sum_{i<j} Cov(I_i,I_j)\\
 &= k \times (\frac{m}{n}-(\frac{m}{n})^2) + k(k-1) \frac{m(m-n)}{n(n-1)}\\
 &= \frac{km}{n} (1-\frac{m}{n} + (k-1))\frac{m-n}{n(n-1)})\\
-&= k\frac{m}{n}(1-\frac{m}{n})\frac{n-k}{n-1}
+&= k\frac{m}{n}(1-\frac{m}{n})\frac{n-k}{n-1}\\
 \end{align*}
 
 
@@ -291,7 +290,7 @@ Q &= tan^{-1} (\frac{Y}{X})\\
 \begin{vmatrix}
 \frac{\partial X}{\partial R} & \frac{\partial X}{\[\partial Q}\\
 \frac{\partial Y}{\partial R} & \frac{\partial Y}{\[\partial Q}\\
-\end{vmatrix} &= R
+\end{vmatrix} &= R\\
 P(R,Q) &= RP(X(R), Y(Q))\\
 &= \frac{R}{2\pi \sigma^2} exp^{-\frac{R^2}{2\sigma^2}}\\
 &= \frac{R}{\sigma^2}exp^{-\frac{R^2}{2\sigma^2}} \times \frac{1}{2\pi}\\
