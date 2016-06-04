@@ -21,6 +21,7 @@
                 <nav><ul>
                     <li><a href="https://github.com/saketkc/rss-graduate-diploma-solutions/tree/master/content">Contribute</a></li>
                     <li class="active"><a href="./category/rss-diploma-module1.html">RSS-Diploma-Module1</a></li>
+                    <li><a href="./category/rss-diploma-module2.html">RSS-Diploma-Module2</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
@@ -146,13 +147,11 @@ Var(Y) &amp;= 5/12
 \end{align*}</div>
 <h1>Problem 4</h1>
 <h2>Problem 4.(i)</h2>
-<div class="math">$$
-\begin{tabular}{|c|c|c|}
+<div class="math">\begin{tabular}{|c|c|c|}
 X1/X2 &amp; 0 &amp; 1\\
 0 &amp; 0.1 &amp; 0.1\\
-1 &amp; 0.3 &amp; 0.5
-\end{tabular}
-$$</div>
+1 &amp; 0.3 &amp; 0.5\\
+\end{tabular}</div>
 <h2>Problem 4.(ii)</h2>
 <div class="math">\begin{align*}
 S_Y &amp;= \{0, 1, 2, 3\}\\
@@ -162,7 +161,7 @@ Idea: Start of with a random row and column in the table,
 Then keep sampling until there are 10 samples(Ignoring anything that is not in <span class="math">\(S_Y\)</span>)</p>
 <h2>Problem 4.(iii)</h2>
 <p>This is straightforward based on theses caseSs</p>
-<div class="math">\begin{align*}i
+<div class="math">\begin{align*}
 Y&amp;=0 \implies X_1=0,X_2=0\\
 Y&amp;=1 \implies X_1=0,X_2=1\\
 Y&amp;=2 \implies X_1=1, X_2=0\\
@@ -232,11 +231,11 @@ and has finite first and second momements, then <span class="math">\(\frac{\bar{
 <h2>Problem 7(a)</h2>
 <div class="math">\begin{align*}
 P[X_1=1] &amp;= \frac{m}{n} \\
-P[X_2=1] &amp;= \sum_{_{x_1}} P(X_2=1|X_=x_1)P(X_1=x__1)\\
+P[X_2=1] &amp;= \sum_{{x_1}} P(X_2=1|X_=x_1)P(X_1=x_1)\\
 &amp;= \frac{m}{n}*\frac{m-1}{n-1} + \frac{n-m}{n}\frac{m}{n-1}\\
 &amp;= \frac{m}{n}\\
 P[X_3=1] &amp;= \sum_{{x_1,x_2}} P(X_3=1,X_2=x_2,X_1=x_1)\\
-&amp;= \sum_{x_1x_2} P(X_3=1|X_1=x_1,X_2=x_2)P(X_1=x_1,X_2=x_2)\\
+&amp;= \sum_{x_1,x_2} P(X_3=1|X_1=x_1,X_2=x_2)P(X_1=x_1,X_2=x_2)\\
 &amp;= \frac{m}{n} \frac{m-1}{n-1} \frac{m-2}{n-2}\\
 &amp;+ \frac{m}{n} \frac{n-m}{n-1} \frac{m-1}{n-2}\\
 &amp;+ \frac{n-m}{n} \frac{m}{n-1} \frac{m-1}{n-2}\\
@@ -254,10 +253,10 @@ Cov[X_i, X_j] &amp;= E[X_i X_j]-E[X_i]E[X_j]\\
 <h2>Problem 7(b)</h2>
 <div class="math">\begin{align*}
 S &amp;= \sum_{i=1}^n I_i\\
-Var(S) &amp;= \sum_{i=1}^k Var(I_i) + 2\sum_{i&lt;j} Cov(I_i,I_j)
+Var(S) &amp;= \sum_{i=1}^k Var(I_i) + 2\sum_{i&lt;j} Cov(I_i,I_j)\\
 &amp;= k \times (\frac{m}{n}-(\frac{m}{n})^2) + k(k-1) \frac{m(m-n)}{n(n-1)}\\
 &amp;= \frac{km}{n} (1-\frac{m}{n} + (k-1))\frac{m-n}{n(n-1)})\\
-&amp;= k\frac{m}{n}(1-\frac{m}{n})\frac{n-k}{n-1}
+&amp;= k\frac{m}{n}(1-\frac{m}{n})\frac{n-k}{n-1}\\
 \end{align*}</div>
 <h1>Problem 8</h1>
 <h2>Problem 8(a,b)</h2>
@@ -267,7 +266,7 @@ Q &amp;= tan^{-1} (\frac{Y}{X})\\
 \begin{vmatrix}
 \frac{\partial X}{\partial R} &amp; \frac{\partial X}{\[\partial Q}\\
 \frac{\partial Y}{\partial R} &amp; \frac{\partial Y}{\[\partial Q}\\
-\end{vmatrix} &amp;= R
+\end{vmatrix} &amp;= R\\
 P(R,Q) &amp;= RP(X(R), Y(Q))\\
 &amp;= \frac{R}{2\pi \sigma^2} exp^{-\frac{R^2}{2\sigma^2}}\\
 &amp;= \frac{R}{\sigma^2}exp^{-\frac{R^2}{2\sigma^2}} \times \frac{1}{2\pi}\\
