@@ -102,11 +102,11 @@ Var(Y) &amp;amp;= 5/12
 \end{align*}&lt;/div&gt;
 &lt;h1&gt;Problem 4&lt;/h1&gt;
 &lt;h2&gt;Problem 4.(i)&lt;/h2&gt;
-&lt;div class="math"&gt;\begin{tabular}{|c|c|c|}
-X1/X2 &amp;amp; 0 &amp;amp; 1\\
-0 &amp;amp; 0.1 &amp;amp; 0.1\\
-1 &amp;amp; 0.3 &amp;amp; 0.5\\
-\end{tabular}&lt;/div&gt;
+&lt;div class="math"&gt;\begin{array}{|c|c|c|}
+X1/X2 &amp;amp; 0 &amp;amp; 1\\\hline
+0 &amp;amp; 0.1 &amp;amp; 0.1\\\hline
+1 &amp;amp; 0.3 &amp;amp; 0.5\\\hline
+\end{array}&lt;/div&gt;
 &lt;h2&gt;Problem 4.(ii)&lt;/h2&gt;
 &lt;div class="math"&gt;\begin{align*}
 S_Y &amp;amp;= \{0, 1, 2, 3\}\\
