@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Royal Statistical Society Graduate Diploma Solutions</title><link>http://www.saket-choudhary.me/rss-graduate-diploma-solutions/</link><description></description><lastBuildDate>Mon, 06 Jun 2016 00:00:00 -0700</lastBuildDate><item><title>Royal Statistical Society Graduate Diploma Module 2- 2014 Solutions</title><link>http://www.saket-choudhary.me/rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-2-2014-solutions.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+<rss version="2.0"><channel><title>Royal Statistical Society Graduate Diploma Solutions - RSS-Diploma-Module2</title><link>http://www.saket-choudhary.me/rss-graduate-diploma-solutions/</link><description></description><lastBuildDate>Mon, 06 Jun 2016 00:00:00 -0700</lastBuildDate><item><title>Royal Statistical Society Graduate Diploma Module 2- 2014 Solutions</title><link>http://www.saket-choudhary.me/rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-2-2014-solutions.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam%20past%20papers/2014/rss-grad-diploma-module2-2014.pdf"&gt;http://www.rss.org.uk/Images/PDF/pro-dev/Exam%20past%20papers/2014/rss-grad-diploma-module2-2014.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1(i)&lt;/h2&gt;
 &lt;div class="math"&gt;\begin{align*}
@@ -7,75 +7,4 @@ P(V=k) &amp;amp;= p(1-p)^{k-1}\\
 G_V(z) &amp;amp;= E[z^V]\\
 &amp;amp;= \sum_{k=1} ^\infty z^kp(1-p)^{k-1}\\
 &amp;amp;= \frac{p}{1-p} \sum_{k=1} (z(1-p))^k\\
-&amp;amp;= \frac{p}{1-p} z(1-p) \frac{1}{1-z(1-p)}\\
-&amp;amp;= \frac{zp}{1-z(1-p)}\\
-G_W(z) &amp;amp;= \Pi_{i=1}^n G_{V_i}(z)\\
-&amp;amp;= (\frac{zp}{1-z(1-p)})^n\\
-\end{align*}&lt;/div&gt;
-&lt;h2&gt;Problem 1(ii)&lt;/h2&gt;
-&lt;div class="math"&gt;\begin{align*}
-f(X|p) &amp;amp;= p^n(1-p)^{W-n}\\
-\log(f(X|p)) &amp;amp;= n \log(p) + (W-n)\log(1-p)\\
-\frac{\partial f(X|p)}{\partial p} &amp;amp;= \frac{n}{p} - (W-n)\frac{1}{1-p}\\
-\frac{\partial^2 f(X|p)}{\partial p^2} &amp;amp;= -\frac{n}{p^2} - (W-n)\frac{1}{(1-p)^2}\\
-\text{Cramer-Rao LB} &amp;amp;= \frac{E[\theta]'}{E[-frac{\partial^2}{\partial p^2}\log(f(X|p))]}\\
-&amp;amp;= \frac{1}{E[\frac{n}{p^2} + (W-n)\frac{1}{(1-p)^2}\\ ]}
-&amp;amp;= \frac{p^2(1-p)}{n}
-\end{align*}&lt;/div&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Mon, 06 Jun 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:www.saket-choudhary.me,2016-06-06:rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-2-2014-solutions.html</guid></item></channel></rss>
+&amp;amp;= \frac{p …&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Mon, 06 Jun 2016 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:www.saket-choudhary.me,2016-06-06:/rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-2-2014-solutions.html</guid></item></channel></rss>

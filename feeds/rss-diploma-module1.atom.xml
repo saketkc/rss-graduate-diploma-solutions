@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Royal Statistical Society Graduate Diploma Solutions</title><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions//feeds/rss-diploma-module1.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/rss-graduate-diploma-solutions/</id><updated>2016-04-21T00:00:00-07:00</updated><entry><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html" rel="alternate"></link><published>2016-04-21T00:00:00-07:00</published><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2016-04-21:rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Royal Statistical Society Graduate Diploma Solutions - RSS-Diploma-Module1</title><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions//feeds/rss-diploma-module1.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/rss-graduate-diploma-solutions/</id><updated>2016-04-21T00:00:00-07:00</updated><entry><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link href="http://www.saket-choudhary.me/rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html" rel="alternate"></link><published>2016-04-21T00:00:00-07:00</published><updated>2016-04-21T00:00:00-07:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2016-04-21:/rss-graduate-diploma-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem 1&lt;/h1&gt;
+&lt;h2&gt;Problem (i)&lt;/h2&gt;
+&lt;div class="math"&gt;\begin{align*}
+F(x) &amp;amp;= P(X \leq x\\
+&amp;amp;= \sum_{A} P(X \leq x, A)\\
+&amp;amp;= P(X \leq x, A) + P(X \leq x, A^c)\\
+&amp;amp;= P(X \leq x|A)P(A) + P(X \leq x|A^c)P(A^c)\\
+&amp;amp;= F_1 …&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;h2&gt;Problem (i)&lt;/h2&gt;
@@ -247,11 +256,9 @@ k^2 &amp;amp;= 2\ln(2)
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -291,4 +298,4 @@ k^2 &amp;amp;= 2\ln(2)
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary></entry></feed>
+&lt;/script&gt;</content></entry></feed>
